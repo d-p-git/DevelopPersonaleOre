@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10sp"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:text="@string/email_text_view"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/email_login_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:text="@string/password_text_view"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/password_login_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:text="@string/login_button"
+            />
+        <TextView
+            android:id="@+id/sing_in_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in_link"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:linksClickable="true"
+            android:paddingTop="20sp"
+            android:textColor="#212BF3"/>
+    </LinearLayout>
+</FrameLayout>
