@@ -3,7 +3,7 @@
     <string name="email_text_view">Email</string>
     <string name="password_text_view">Password</string>
     <string name="login_button">LOGIN</string>
-    <string name="sign_in_button">SIGN IN</string>
-    <string name="sign_in_link">Sign in</string>
+    <string name="sign_in_button">SIGN UP</string>
+    <string name="register_link">Register></string>
     <string name="email_hint">prova@azienda.it</string>
 </resources>

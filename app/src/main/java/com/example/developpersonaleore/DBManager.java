@@ -25,8 +25,6 @@ public class DBManager extends SQLiteOpenHelper {
         String query = "CREATE TABLE users (id INTEGER PRIMARY KEY AUTOINCREMENT, email TEXT, password TEXT)";
         db.execSQL(query);
     }
-
-
     public ArrayList<Bundle> getUsers(){
         ArrayList<Bundle> users = new ArrayList<>();
         SQLiteDatabase db = getReadableDatabase();
@@ -42,10 +40,11 @@ public class DBManager extends SQLiteOpenHelper {
             cursor.moveToNext();
         }
         db.close();
+        cursor.close();
         return users;
     }
 
-    public long insertUser(Bundle user){
+    long insertUser(Bundle user){
         SQLiteDatabase db = getWritableDatabase();
 
         ContentValues contentValues = new ContentValues();

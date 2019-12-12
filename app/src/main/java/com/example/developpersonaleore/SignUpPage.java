@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class SignInPage extends AppCompatActivity {
+public class SignUpPage extends AppCompatActivity {
 
     EditText emailSignInET;
     EditText passwordSignInET;
@@ -22,16 +22,15 @@ public class SignInPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_in_page);
+        setContentView(R.layout.activity_sign_up_page);
 
-        emailSignInET = findViewById(R.id.email_sign_in_edit_text);
-        passwordSignInET = findViewById(R.id.password_sign_in_edit_text);
+        emailSignInET = findViewById(R.id.email_sign_up_edit_text);
+        passwordSignInET = findViewById(R.id.password_sign_up_edit_text);
 
-        signInBtn = findViewById(R.id.sign_in_button);
+        signInBtn = findViewById(R.id.sign_up_button);
         signInBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
 
                 saveUser();
             }

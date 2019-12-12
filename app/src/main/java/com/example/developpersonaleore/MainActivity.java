@@ -40,12 +40,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        //rimando alla pagina di sign up
         signInTV = findViewById(R.id.sing_in_text_view);
         signInTV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SignInPage.class);
+                Intent intent = new Intent(MainActivity.this, SignUpPage.class);
                 startActivity(intent);
             }
         });
