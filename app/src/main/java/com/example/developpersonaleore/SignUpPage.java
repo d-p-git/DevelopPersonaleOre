@@ -24,6 +24,7 @@ public class SignUpPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up_page);
 
+        dbManager = new DBManager(this,DBManager.DATABASE_NAME,null,DBManager.DATABASE_VERSION);
         emailSignInET = findViewById(R.id.email_sign_up_edit_text);
         passwordSignInET = findViewById(R.id.password_sign_up_edit_text);
 
@@ -42,7 +43,7 @@ public class SignUpPage extends AppCompatActivity {
         user.putString("email",emailSignInET.getText().toString());
         user.putString("password",passwordSignInET.getText().toString());
         int contactID = (int) dbManager.insertUser(user);
-        Toast.makeText(this,"Registrazione effettuata",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"Registrazione effettuata con successo!",Toast.LENGTH_LONG).show();
         finish();
 
     }

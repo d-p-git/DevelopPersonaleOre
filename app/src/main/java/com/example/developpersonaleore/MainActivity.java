@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(MainActivity.this, LoginHomepage.class);
+                intent.putExtra("user",emailET.getText().toString());
                 startActivity(intent);
             }
         });
