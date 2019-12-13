@@ -89,7 +89,7 @@
             android:layout_gravity="center"
             android:text="@string/login_button"
             android:textSize="20sp"
-            android:background="@drawable/background_button"/>
+            android:background="@drawable/background_button_login"/>
 
         <TextView
             android:id="@+id/sing_in_text_view"

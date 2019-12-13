@@ -6,4 +6,5 @@
     <string name="sign_in_button">SIGN UP</string>
     <string name="register_link">Register></string>
     <string name="email_hint">prova@azienda.it</string>
+    <string name="timbro">TIMBRA</string>
 </resources>
