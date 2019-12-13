@@ -49,7 +49,9 @@
             android:textStyle="bold"
             android:paddingTop="10sp"
             android:paddingBottom="10sp"/>
-
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
         <EditText
             android:id="@+id/password_login_edit_text"
             android:layout_width="match_parent"
@@ -64,6 +66,16 @@
             android:paddingBottom="12dp"
             android:hint="@string/password_text_view"
             android:autofillHints="@string/password_text_view"/>
+
+            <ImageView
+                android:id="@+id/toggle_password_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10sp"
+                android:paddingStart="10sp"
+                android:src="@drawable/baseline_visibility_black_36"
+                android:layout_gravity="center_vertical|end"/>
+        </FrameLayout>
 
         <TextView
             android:layout_width="match_parent"
