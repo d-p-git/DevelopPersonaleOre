@@ -85,7 +85,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textSize="20sp"
-            android:background="@drawable/background_button"
+            android:background="@drawable/background_button_login"
             android:text="@string/sign_in_button"/>
     </LinearLayout>
 </FrameLayout>
